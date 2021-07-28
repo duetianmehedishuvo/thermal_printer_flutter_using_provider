@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:tutorial/localization/language_constrants.dart';
+import 'package:tutorial/view/screen/home/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -49,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _route() {
     Timer(Duration(seconds: 1), () async {
-      //Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => LoginScreen()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => HomeScreen()));
     });
   }
 

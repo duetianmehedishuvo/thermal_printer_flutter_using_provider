@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
     });
 
     return MaterialApp(
-      title: 'ASIT Hospital',
+      title: 'Thermal Printer',
       locale: Provider.of<LocalizationProvider>(context).locale,
       theme: Provider.of<ThemeProvider>(context).darkTheme ? dark : light,
       debugShowCheckedModeBanner: false,
